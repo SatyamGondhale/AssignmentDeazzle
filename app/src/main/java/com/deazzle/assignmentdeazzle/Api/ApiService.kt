@@ -1,5 +1,6 @@
 package com.deazzle.deazzleassignmentkotlin.api
 
+import com.deazzle.assignmentdeazzle.database.RandomUser
 import com.deazzle.assignmentdeazzle.model.Example
 import retrofit2.Call
 import retrofit2.http.GET

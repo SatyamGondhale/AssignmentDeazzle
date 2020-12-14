@@ -1,19 +1,12 @@
 package com.deazzle.deazzleassignment.model
 
+import androidx.room.ColumnInfo
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-class Picture {
-    @SerializedName("large")
-    @Expose
-    var large: String? = null
-
-    @SerializedName("medium")
-    @Expose
-    var medium: String? = null
-
-    @SerializedName("thumbnail")
-    @Expose
-    public var thumbnail: String? = null
-
-}
+data class Picture (@ColumnInfo(name = "large")
+                    var large: String,
+                    @ColumnInfo(name = "medium")
+                    var medium: String,
+                    @ColumnInfo(name = "thumbnail")
+                    var thumbnail: String)
